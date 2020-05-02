@@ -1,8 +1,11 @@
 function ScheduleSharingFromSheet() {
 /**
  * Turn on/off sharing by link for a list of documents with ID's from the spreadsheet 
- * https://docs.google.com/spreadsheets/d/1s3zZX43jd5H7yaAqLpRcTk4GTfaVN5t851ki4XFCWcE/edit
+ * https://docs.google.com/spreadsheets/d/1s3zZX43jd5H7yaAqLpRcTk4GTfaVN5t851ki4XFCWcE
+ * Modify spreadsheedId to use the id of Google Sheet file with your custom schedule.  
+ * Use Schedule_sheet.xlsx as template.
  */
+
  eval(UrlFetchApp.fetch('https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js').getContentText());
  var spreadsheetId = '1s3zZX43jd5H7yaAqLpRcTk4GTfaVN5t851ki4XFCWcE';
  var rangeName = 'Sheet1!A2:C';
